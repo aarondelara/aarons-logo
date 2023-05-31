@@ -30,7 +30,7 @@ function enterShape() {
 
 function checkInput(input, verification) {
     for (let i = 0; i < verification.direct.length; i++) {
-        if (verification.indirect[i] === input) return true;
+        if (verification.direct[i] === input) return true;
     }
     if (verification.indirect) {
         let match = input.match(verification.indirect);
